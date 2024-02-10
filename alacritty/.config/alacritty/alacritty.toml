@@ -33,7 +33,7 @@ WINIT_X11_SCALE_FACTOR = "1.00"
 
 [window]
 decorations = "Full"
-opacity = 0.8
+opacity = 0.70
 startup_mode = "Maximized"
 title = "Terminal"
 
