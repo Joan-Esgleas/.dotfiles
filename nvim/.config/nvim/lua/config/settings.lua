@@ -2,6 +2,7 @@ vim.opt.clipboard = "unnamedplus"               -- allows neovim to access the s
 vim.opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
 vim.opt.conceallevel = 0                        -- so that `` is visible in markdown files
 --vim.opt.cmdheight = 2                           -- more space in the neovim command line for displaying messages
+vim.opt.showmode = false                        -- we don't need to see things like -- INSERT -- anymore
 vim.opt.hlsearch = false                        -- highlight all matches on previous search pattern
 vim.opt.ignorecase = true                       -- ignore case in search patterns
 vim.opt.mouse = "a"                             -- allow the mouse to be used in neovim
@@ -25,5 +26,6 @@ vim.opt.relativenumber = true                  -- set relative numbered lines
 --vim.opt.numberwidth = 4                         -- set number column width to {default 4}
 vim.opt.signcolumn = "no"                      -- always show the sign column, otherwise it would shift the text each time
 vim.opt.wrap = false                            -- display lines as one long line
-vim.opt.scrolloff = 8                            
+vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
+

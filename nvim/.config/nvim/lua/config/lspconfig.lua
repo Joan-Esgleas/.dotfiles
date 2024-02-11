@@ -1,5 +1,5 @@
+-- Lsp-zero with mason:
 local lsp_zero = require('lsp-zero')
-
 require('mason').setup({})
 require('mason-lspconfig').setup({
   handlers = {
@@ -7,40 +7,39 @@ require('mason-lspconfig').setup({
   },
 })
 
-local cmp = require('cmp')
-local cmp_action = require('lsp-zero').cmp_action()
-local cmp_select = {behavior = cmp.SelectBehavior.Select}
 
+
+-- Complition configuration:
 local kind_icons = {
   Text = "󰉿",
-	Method = "󰆧",
-	Function = "󰊕",
-	Constructor = "",
+  Method = "󰆧",
+  Function = "󰊕",
+  Constructor = "",
   Field = " ",
-	Variable = "󰀫",
-	Class = "󰠱",
-	Interface = "",
-	Module = "",
-	Property = "󰜢",
-	Unit = "󰑭",
-	Value = "󰎠",
-	Enum = "",
-	Keyword = "󰌋",
+  Variable = "󰀫",
+  Class = "󰠱",
+  Interface = "",
+  Module = "",
+  Property = "󰜢",
+  Unit = "󰑭",
+  Value = "󰎠",
+  Enum = "",
+  Keyword = "󰌋",
   Snippet = "",
-	Color = "󰏘",
-	File = "󰈙",
+  Color = "󰏘",
+  File = "󰈙",
   Reference = "",
-	Folder = "󰉋",
-	EnumMember = "",
-	Constant = "󰏿",
+  Folder = "󰉋",
+  EnumMember = "",
+  Constant = "󰏿",
   Struct = "",
-	Event = "",
-	Operator = "󰆕",
+  Event = "",
+  Operator = "󰆕",
   TypeParameter = " ",
-	Misc = " ",
+  Misc = " ",
 }
 
-
+local cmp = require('cmp')
 cmp.setup({
   formatting = {
     fields = { "kind", "abbr", "menu" },
@@ -64,14 +63,13 @@ cmp.setup({
   },
 
   sources = {
-    {name = 'path'},
-    {name = 'nvim_lsp'},
-    {name = 'buffer', keyword_length = 2},
-    {name = 'luasnip', keyword_length = 2},
+    { name = 'path' },
+    { name = 'nvim_lsp' },
+    { name = 'buffer',  keyword_length = 2 },
+    { name = 'luasnip', keyword_length = 2 },
   },
-  
+
   experimental = {
     ghost_text = true,
   },
 })
-
