@@ -28,4 +28,5 @@ vim.opt.signcolumn = "no"                      -- always show the sign column, o
 vim.opt.wrap = false                            -- display lines as one long line
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
+vim.opt.colorcolumn = '80'                        -- Vertical line at 80 characters
 
