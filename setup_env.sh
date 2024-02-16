@@ -25,4 +25,12 @@ else
 fi
 fi
 
-stow --adopt -vt ~ */
+stow --adopt -vt ~ Wallpapers/ 
+stow --adopt -vt ~ fonts/
+stow --adopt -vt ~ starship/
+
+
+if test -f "~/.bashrc"; then
+    rm "~/.bashrc"
+fi
+cp $PWD/bash/.bashrc ~
