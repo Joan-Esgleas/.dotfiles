@@ -29,8 +29,9 @@ stow --adopt -vt ~ Wallpapers/
 stow --adopt -vt ~ fonts/
 stow --adopt -vt ~ starship/
 
-
 if test -f "~/.bashrc"; then
-    rm "~/.bashrc"
+    cp ~/.bashrc ~/.bashrc.bkp
+    rm ~/.bashrc
 fi
+
 cp $PWD/bash/.bashrc ~
