@@ -1,4 +1,1 @@
-commando para ejecutar y guardar el stow:
-
-
-stow --adopt -vt ~ */
+Setups chmod +x setup_env.sh
