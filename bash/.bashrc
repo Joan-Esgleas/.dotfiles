@@ -61,4 +61,7 @@ alias ls='ls -Fh --color=always'
 alias cat='bat'
 alias python='python3'
 
+
+#starship configuration
+export STARSHIP_CONFIG=~/.config/starship-themes/starship.toml
 eval "$(starship init bash)"
