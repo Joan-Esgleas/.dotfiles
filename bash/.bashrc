@@ -39,10 +39,12 @@ if [[ $iatest -gt 0 ]]; then bind "set completion-ignore-case on"; fi
 # Show auto-completion list automatically, without double tab
 #if [[ $iatest -gt 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 
+export PATH="/home/joan/.local/bin:$PATH"
 export EDITOR=nvim
 export VISUAL=nvim
 alias vim='nvim'
 alias vi='nvim'
+alias uvim='nvim --listen /tmp/nvimsocket'
 
 # To have colors for ls and all grep commands such as grep, egrep and zgrep
 export CLICOLOR=1
