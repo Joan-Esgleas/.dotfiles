@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 Starship() {
   while true; do
     read -p "Install starship? (Yy/Nn): " yn
