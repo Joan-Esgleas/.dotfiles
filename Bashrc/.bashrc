@@ -45,7 +45,7 @@ export VISUAL=nvim
 alias vim='nvim'
 alias vi='nvim'
 alias uvim='nvim --listen /tmp/nvimsocket'
-alias rcommit='M=$(curl -s https://whatthecommit.com/index.txt) && echo $M  && git commit -m "$M"'
+alias rcommit='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
 
 # To have colors for ls and all grep commands such as grep, egrep and zgrep
 export CLICOLOR=1
