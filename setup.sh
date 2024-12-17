@@ -330,7 +330,7 @@ Grub() {
     esac
   done
 
-  sudo stow --adopt -vt /etc/default grub
+  sudo stow --adopt -vt /etc/default Grub
   sudo update-grub
 }
 
