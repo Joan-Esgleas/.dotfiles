@@ -312,6 +312,28 @@ Rofi() {
   stow --adopt -vt ~ Rofi/
 }
 
+Grub() {
+  while true; do
+    read -p " You will need sudo!!! Install grub? (Yy/Nn): " yn
+    case $yn in
+        [Yy]* )
+            echo ":: Installation started."
+            echo
+        break;;
+        [Nn]* ) 
+            echo
+            return;
+        break;;
+        * ) 
+            echo ":: Please answer yes or no."
+        ;;
+    esac
+  done
+
+  sudo stow --adopt -vt /etc/default grub
+  sudo update-grub
+}
+
 Starship
 Fonts
 Stow
@@ -321,8 +343,10 @@ Neovim
 Hyprland
 Waybar
 Dunst
-Sddm
 Swappy
 Alacritty
 Wofi
 Rofi
+Grub
+#Sddm
+

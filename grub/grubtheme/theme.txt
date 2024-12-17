@@ -1,0 +1,79 @@
+# openSUSE grub2 theme
+
+desktop-color: "#0D202F"
+desktop-image: "fierwatchWallpaper.png"
+title-text: ""
+title-color: "#fff"
+title-font: "DejaVu Sans Bold 14"
+
+terminal-font: "Gnu Unifont Mono Regular 16"
+
+#+ image {
+#  width = 198
+#  height = 45
+#  left = 20
+#  top = 10
+#  file = "logo.png"
+#}
+
++ boot_menu {
+  left = 52%
+  width = 28%
+  top = 19%
+  height = 54%	
+
+  item_font = "DejaVu Sans Regular 12"
+  item_color = "#fff"
+  item_height = 48
+  item_spacing = 6
+  item_padding = 3
+
+  selected_item_font = "DejaVu Sans Regular 12"
+  selected_item_color= "#ffffff"
+  selected_item_pixmap_style = "highlight_*.png"
+
+  icon_height = 32
+  icon_width = 32
+
+  scrollbar = true
+  scrollbar_width = 20
+  scrollbar_thumb = "slider_*.png"
+}
+
+# Show a countdown message using the label component
++ label {
+  top = 76%
+  left = 55%
+  width = 23%
+  align = "center"
+  id = "__timeout__"
+  text = "Booting in %d seconds"
+  color = "#ffffff"
+  font = "DejaVu Sans Regular 14"
+}
+
+#+ progress_bar {
+#  id = "__timeout__"
+
+#  left = 18%
+#  width = 64%
+#  top = 33%-32
+#  height = 5
+
+#  font = "DejaVu Sans Regular 10"
+
+#  text_color = "#fff"
+#  fg_color = "#0D202F"
+
+#  bg_color = "#0D202F"
+#  border_color = "#0D202F"
+
+#  text = "@TIMEOUT_NOTIFICATION_SHORT@"
+#}
+
++ hbox {
+		top = 100%-35
+		left = 20
+		+ label {text = "C: Command Line     E: Edit Entry" font = "DejaVu Sans Regular 12" color = "#ffffff" align = "left"}
+}
+
