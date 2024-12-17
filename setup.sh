@@ -24,7 +24,7 @@ Starship() {
 else
   curl -sS https://starship.rs/install.sh | sh
 fi
-  stow --adopt -vt ~ starship/
+  stow --adopt -vt ~/.config Starship/
 }
 
 Fonts() {
@@ -86,7 +86,7 @@ Wallpapers() {
         ;;
     esac
   done
-  stow --adopt -vt ~ Wallpapers/
+  stow --adopt -vt ~/.config Wallpapers/
 }
 
 Stow() {
@@ -119,7 +119,7 @@ Bashrc() {
       cp ~/.bashrc ~/.bashrc.bkp
       rm ~/.bashrc
   fi
-  stow --adopt -vt ~ bash/
+  stow --adopt -vt ~ Bashrc/
 }
 
 Neovim() {
@@ -140,7 +140,7 @@ Neovim() {
     esac
   done
 
-  stow --adopt -vt ~ nvim/ 
+  stow --adopt -vt ~/.config Neovim/ 
 }
 
 Hyprland() {
@@ -161,7 +161,7 @@ Hyprland() {
     esac
   done
   mkdir -p ~/.config/hypr/
-  stow --adopt -vt ~ Hyprland/ 
+  stow --adopt -vt ~/.config Hyprland/ 
 }
 
 Waybar() {
@@ -182,7 +182,7 @@ Waybar() {
     esac
   done
 
-  stow --adopt -vt ~ waybar/
+  stow --adopt -vt ~/.config Waybar/
 }
 
 Dunst() {
@@ -204,7 +204,7 @@ Dunst() {
   done
 
 
-  stow --adopt -vt ~ Dunst/
+  stow --adopt -vt ~/.config Dunst/
 }
 
 Sddm() {
@@ -248,7 +248,7 @@ Swappy() {
   done
 
 
-  stow --adopt -vt ~ Swappy/
+  stow --adopt -vt ~/.config Swappy/
 }
 
 Alacritty() {
@@ -268,7 +268,7 @@ Alacritty() {
         ;;
     esac
   done
-  stow --adopt -vt ~ Alacritty/
+  stow --adopt -vt ~/.config/ Alacritty/
 }
 
 Wofi() {
@@ -288,7 +288,7 @@ Wofi() {
         ;;
     esac
   done
-  stow --adopt -vt ~ Wofi/
+  stow --adopt -vt ~/.config Wofi/
 }
 
 Rofi() {
@@ -309,7 +309,7 @@ Rofi() {
     esac
   done
 
-  stow --adopt -vt ~ Rofi/
+  stow --adopt -vt ~/.config Rofi/
 }
 
 Grub() {
