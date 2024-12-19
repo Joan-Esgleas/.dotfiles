@@ -41,7 +41,7 @@ lsp_zero.on_attach(function(client, bufnr)
 
   vim.keymap.set("n", "<leader>c", function() vim.cmd.Lspsaga("code_action") end, opts)
 
-  vim.keymap.set("n", "<leader>f", function() vim.cmd.Lspsaga("finder") end, opts)
+  vim.keymap.set("n", "<C-f>", function() vim.cmd.Lspsaga("finder") end, opts)
 
   vim.keymap.set("n", "<leader>d", function() vim.cmd.Lspsaga("hover_doc") end, opts)
 
@@ -49,7 +49,7 @@ lsp_zero.on_attach(function(client, bufnr)
   vim.keymap.set("n", "gD", function() vim.lsp.buf.declaration() end, opts)
   vim.keymap.set("n", "gi", function() vim.lsp.buf.implementation() end, opts)
   vim.keymap.set("n", "<leader>rf", function() vim.lsp.buf.references() end, opts)
-  vim.keymap.set("n", "<leader>F", function() vim.lsp.buf.format() end, opts)
+  vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end, opts)
   vim.keymap.set("n", "<leader>rn", function() vim.cmd.Lspsaga("rename") end, opts)
 end)
 
