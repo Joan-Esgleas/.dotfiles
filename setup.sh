@@ -45,7 +45,7 @@ Fonts() {
     esac
   done
 
-  mkdir -p /usr/local/share/fonts/
+  sudo mkdir -p /usr/local/share/fonts/
   cd /tmp
   fonts=( 
   #"CascadiaCode"
@@ -333,9 +333,9 @@ Grub() {
   sudo update-grub
 }
 
+Stow
 Starship
 Fonts
-Stow
 Wallpapers
 Bashrc
 Neovim
