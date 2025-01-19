@@ -161,6 +161,8 @@ Hyprland() {
   done
   mkdir -p ~/.config/hypr/
   stow --adopt -vt ~/.config Hyprland/ 
+  mkdir -p ~/.local/share/icons/
+  stow --adopt -vt ~/.local/share/icons/ Hyprcursor/
 }
 
 Waybar() {
