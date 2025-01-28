@@ -19,6 +19,8 @@ export HISTSIZE=500
 
 export CPLUS_INCLUDE_PATH=/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11
 
+export OLLAMA_MODELS=/home/joan/Models/
+
 # Don't put duplicate lines in the history and do not add lines that start with a space
 export HISTCONTROL=erasedups:ignoredups:ignorespace
 
